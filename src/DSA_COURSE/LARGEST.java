@@ -12,13 +12,14 @@ public class LARGEST {
         int b= sc.nextInt();
         int c= sc.nextInt();
 
-       if (a>b && a>c){
-           System.out.println(a +" is Largest");
-       } else if (b>a && b>c) {
-           System.out.println(b+" is Largest");
-       }else {
-           System.out.println(c+" is Largest");
+        int max=a;
+       if(b>max){
+           max=b;
        }
+       if(c>max){
+           max=c;
+       }
+        System.out.println(max);
 
 
     }
