@@ -19,6 +19,14 @@ public class Loops {
             System.out.println(num1);
             num1++;
         }
+        System.out.println("While loop");
+        //do while
+        int i=1;
+        do {
+
+            System.out.println(i);
+            i++;
+        }while (i<5);
 
     }
 }
