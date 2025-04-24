@@ -4,10 +4,16 @@ import java.util.Scanner;
 
 public class Armstrong {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int num= sc.nextInt();
-        boolean a= isArmstrong(num);
-        System.out.println(a);
+       // Scanner sc=new Scanner(System.in);
+      //  int num= sc.nextInt();
+      //  boolean a= isArmstrong(num);
+       // System.out.println(a);
+
+        for (int i = 100; i < 1000; i++) {
+            if (isArmstrong(i)){
+                System.out.println(i);
+            }
+        }
 
     }
     static boolean isArmstrong(int n){
