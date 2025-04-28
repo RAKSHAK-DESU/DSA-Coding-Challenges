@@ -1,6 +1,7 @@
 package ArraysAndArraylist;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MultiDimentionalArray {
@@ -25,8 +26,13 @@ public class MultiDimentionalArray {
 
         for (int row = 0; row < arr2.length; row++) {
             for (int col = 0; col < arr2[row].length; col++) {
-                System.out.println(arr2[row][col]);
+                System.out.print(arr2[row][col]);
             }
+            System.out.println();
+        }
+
+        for (int row = 0; row < arr2.length; row++) {
+            System.out.println(Arrays.toString(arr2[row]));
         }
 
 
