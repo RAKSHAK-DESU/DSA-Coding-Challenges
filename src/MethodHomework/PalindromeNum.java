@@ -23,7 +23,8 @@ public class PalindromeNum {
         return reversed;
     }
 
-    static boolean isPalindrome(int original, int reversed){
+    static boolean isPalindrome(int original, int reversed)
+    {
         boolean palNum=false;
         if (original==reversed){
             palNum=true;
