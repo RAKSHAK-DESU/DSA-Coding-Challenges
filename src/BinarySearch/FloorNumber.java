@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class FloorNumber {
     public static void main(String[] args) {
         int[] arr={1,2,3,4,5,6,7,8,9,110,121,434,874};
-        int target=111;
+        int target=435;
         System.out.println(Floor(arr,target));
 
     }
     static int Floor(int arr[], int target){
+        if (target>arr[arr.length-1]){
+            return -1;
+        }
         int start=0;
         int end= arr.length-1;
 

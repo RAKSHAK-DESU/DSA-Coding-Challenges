@@ -12,10 +12,14 @@ public class CeilingNumber {
         System.out.println(result);
     }
     static int Ceiling(int arr[] , int target){
+        if (target>arr[arr.length-1]){
+            return -1;
+        }
         int start=0;
         int end=arr.length-1;
 
         while (start<=end){
+
             int middle=start+(end-start)/2;
 
             if (target<arr[middle]){
