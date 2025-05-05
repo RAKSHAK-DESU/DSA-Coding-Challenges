@@ -1,12 +1,12 @@
 package BinarySearch;
 
-import java.util.Scanner;
+
 
 public class CeilingNumber {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int[] arr={1,2,3,4,5,6,7,8,9,10};
-        int target= 3;
+
+        int[] arr={1,2,4,7,8,9,10};
+        int target= 6;
 
         int result=Ceiling(arr,target);
         System.out.println(result);
@@ -26,7 +26,8 @@ public class CeilingNumber {
                return middle;
             }
         }
-        return -1;
+        return start;
     }
-
+//Answer does not lie between start and end , hence it dosent lie
+// in that range thats why go to next gretaer element , which is start
 }
