@@ -1,5 +1,4 @@
 package MethodHomework;
-
 import java.util.Scanner;
 
 public class FactorialPrint {
@@ -19,6 +18,12 @@ public class FactorialPrint {
     }
 
     static int Factorial(int num){
+        if (num == 0) {
+            return 0;
+        }
+        if (num==1){
+            return 1;
+        }
         int product=1;
         while (num>0){
             int remainder=num%10;
