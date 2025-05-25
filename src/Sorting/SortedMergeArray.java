@@ -1,4 +1,7 @@
 package Sorting;
+
+import java.util.Arrays;
+
 //https://leetcode.com/problems/merge-sorted-array/
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
@@ -17,6 +20,7 @@ class Solution {
                     int temp=nums1[j-1];
                     nums1[j-1]=nums1[j];
                     nums1[j]=temp;
+
                 }
             }
         }
